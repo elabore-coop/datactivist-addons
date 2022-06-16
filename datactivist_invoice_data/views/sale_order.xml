@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="sale_order_datativist_form_1" model="ir.ui.view">
+        <field name="name">sale.order.datactivist.form.1</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='partner_shipping_id']" position="after">
+                <field name="siret" />
+                <field name="fr_chorus_service_id" />
+            </xpath>
+            <xpath expr="//field[@name='client_order_ref']" position="after">
+                <field name="legal_commitment" />
+                <field name="market_number" />
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

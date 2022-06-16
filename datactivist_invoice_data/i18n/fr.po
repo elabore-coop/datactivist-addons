@@ -1,0 +1,95 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* datactivist_invoice_data
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-06-16 08:46+0000\n"
+"PO-Revision-Date: 2022-06-16 08:46+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: datactivist_invoice_data
+#: model:ir.model.fields,field_description:datactivist_invoice_data.field_account_bank_statement_line__fr_chorus_service_id
+#: model:ir.model.fields,field_description:datactivist_invoice_data.field_account_move__fr_chorus_service_id
+#: model:ir.model.fields,field_description:datactivist_invoice_data.field_account_payment__fr_chorus_service_id
+#: model:ir.model.fields,field_description:datactivist_invoice_data.field_sale_order__fr_chorus_service_id
+msgid "Chorus Service"
+msgstr "Service Chorus"
+
+#. module: datactivist_invoice_data
+#: model:ir.model.fields,field_description:datactivist_invoice_data.field_account_move__display_name
+#: model:ir.model.fields,field_description:datactivist_invoice_data.field_sale_advance_payment_inv__display_name
+#: model:ir.model.fields,field_description:datactivist_invoice_data.field_sale_order__display_name
+msgid "Display Name"
+msgstr "Nom affiché"
+
+#. module: datactivist_invoice_data
+#: model:ir.model.fields,field_description:datactivist_invoice_data.field_account_move__id
+#: model:ir.model.fields,field_description:datactivist_invoice_data.field_sale_advance_payment_inv__id
+#: model:ir.model.fields,field_description:datactivist_invoice_data.field_sale_order__id
+msgid "ID"
+msgstr ""
+
+#. module: datactivist_invoice_data
+#: model:ir.model,name:datactivist_invoice_data.model_account_move
+msgid "Journal Entry"
+msgstr "Pièce comptable"
+
+#. module: datactivist_invoice_data
+#: model:ir.model.fields,field_description:datactivist_invoice_data.field_account_move____last_update
+#: model:ir.model.fields,field_description:datactivist_invoice_data.field_sale_advance_payment_inv____last_update
+#: model:ir.model.fields,field_description:datactivist_invoice_data.field_sale_order____last_update
+msgid "Last Modified on"
+msgstr "Dernière modification le"
+
+#. module: datactivist_invoice_data
+#: model:ir.model.fields,field_description:datactivist_invoice_data.field_account_bank_statement_line__legal_commitment
+#: model:ir.model.fields,field_description:datactivist_invoice_data.field_account_move__legal_commitment
+#: model:ir.model.fields,field_description:datactivist_invoice_data.field_account_payment__legal_commitment
+#: model:ir.model.fields,field_description:datactivist_invoice_data.field_sale_order__legal_commitment
+msgid "Legal commitment"
+msgstr "Engagement juridique"
+
+#. module: datactivist_invoice_data
+#: model:ir.model.fields,field_description:datactivist_invoice_data.field_account_bank_statement_line__market_number
+#: model:ir.model.fields,field_description:datactivist_invoice_data.field_account_move__market_number
+#: model:ir.model.fields,field_description:datactivist_invoice_data.field_account_payment__market_number
+#: model:ir.model.fields,field_description:datactivist_invoice_data.field_sale_order__market_number
+msgid "Market Number"
+msgstr "Numéro de marché"
+
+#. module: datactivist_invoice_data
+#: model:ir.model,name:datactivist_invoice_data.model_sale_advance_payment_inv
+msgid "Sales Advance Payment Invoice"
+msgstr "Facture de paiement d'avance"
+
+#. module: datactivist_invoice_data
+#: model:ir.model,name:datactivist_invoice_data.model_sale_order
+msgid "Sales Order"
+msgstr "Bon de commande"
+
+#. module: datactivist_invoice_data
+#: model:ir.model.fields,field_description:datactivist_invoice_data.field_account_bank_statement_line__siret
+#: model:ir.model.fields,field_description:datactivist_invoice_data.field_account_move__siret
+#: model:ir.model.fields,field_description:datactivist_invoice_data.field_account_payment__siret
+#: model:ir.model.fields,field_description:datactivist_invoice_data.field_sale_order__siret
+msgid "Siret"
+msgstr ""
+
+#. module: datactivist_invoice_data
+#: model:ir.model.fields,help:datactivist_invoice_data.field_account_bank_statement_line__siret
+#: model:ir.model.fields,help:datactivist_invoice_data.field_account_move__siret
+#: model:ir.model.fields,help:datactivist_invoice_data.field_account_payment__siret
+#: model:ir.model.fields,help:datactivist_invoice_data.field_sale_order__siret
+msgid ""
+"The SIRET number is the official identity number of this company's office in"
+" France. It is composed of the 9 digits of the SIREN number and the 5 digits"
+" of the NIC number, ie. 14 digits."
+msgstr ""
