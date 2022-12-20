@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="0">
+    <record id="task_tag_deliverable" model="project.tags">
+        <field name="name">Deliverable</field>
+    </record>
+</odoo>

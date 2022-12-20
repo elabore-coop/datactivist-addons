@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="portal_my_deliverables" name="My Deliverables">
+        <t t-call="portal.portal_layout">
+            <t t-set="breadcrumbs_searchbar" t-value="True" />
+
+            <t t-call="portal.portal_searchbar">
+                <t t-set="title">Deliverables</t>
+            </t>
+            <t t-if="not grouped_deliverables">
+                <div class="alert alert-warning mt8" role="alert">
+                    There are no deliverables.
+                </div>
+            </t>
+            <t t-if="grouped_deliverables">
+                <t t-call="portal.portal_table">
+                    <t t-foreach="grouped_deliverables" t-as="deliverables">
+                        <thead>
+                            <tr t-attf-class="{{'thead-light' if not groupby == 'none' else ''}}">
+                                <th class="text-left">Ref</th>
+                                <th t-if="groupby == 'none'">Name</th>
+                                <th t-if="groupby == 'project'">
+                                    <em class="font-weight-normal text-muted"><span
+                                            t-field="deliverables[0].sudo().project_id.label_tasks" />
+                                        for project:</em>
+                                    <span t-field="deliverables[0].sudo().project_id.name" />
+                                </th>
+                                <th t-if="groupby == 'stage'">
+                                    <em class="font-weight-normal text-muted"><span
+                                            t-field="deliverables[0].sudo().project_id.label_tasks" />
+                                        in stage:</em>
+                                    <span class="text-truncate"
+                                        t-field="deliverables[0].sudo().stage_id.name" />
+                                </th>
+                                <th t-if="groupby != 'project'" class="text-center">Project</th>
+                                <th t-if="groupby != 'stage'" class="text-center">Stage</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <t t-foreach="deliverables" t-as="deliverable">
+                                <tr>
+                                    <td class="text-left"> #<span t-esc="deliverable.id" />
+                                    </td>
+                                    <td>
+                                        <a
+                                            t-attf-href="/my/task/#{deliverable.id}?{{ keep_query() }}">
+                                            <span t-field="deliverable.name" />
+                                        </a>
+                                    </td>
+                                    <td t-if="groupby != 'project'" class="text-center">
+                                        <span class="badge badge-pill badge-info"
+                                            title="Current project of the deliverable"
+                                            t-esc="deliverable.project_id.name" />
+                                    </td>
+                                    <td t-if="groupby != 'stage'" class="text-center">
+                                        <span class="badge badge-pill badge-info"
+                                            title="Current stage of the deliverable"
+                                            t-esc="deliverable.stage_id.name" />
+                                    </td>
+                                </tr>
+                            </t>
+                        </tbody>
+                    </t>
+                </t>
+            </t>
+        </t>
+    </template>
+</odoo>
