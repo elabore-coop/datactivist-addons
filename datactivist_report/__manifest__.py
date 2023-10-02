@@ -57,7 +57,7 @@ This module is maintained by ELABORE.
 """,
     # any module necessary for this one to work correctly
     "depends": [  
-        "account",
+        "account","sale"
     ],
     "external_dependencies": {
         "python": [],
